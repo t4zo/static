@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-180x180.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+
+    <title>reddit: the front page of the internet</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar d-flex align-items-center">
+        <a class="navbar-brand mx-2" href="#">
+          <div class="mr-5">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 32px">
+              <g>
+                <circle fill="#FF4500" cx="10" cy="10" r="10"></circle>
+                <path
+                  fill="#FFF"
+                  d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
+                ></path>
+              </g>
+            </svg>
+            <svg viewBox="0 0 55 17.44">
+              <g fill="#1c1c1c">
+                <circle fill="#FF4500" cx="45.77" cy="3.33" r="2.05"></circle>
+                <path
+                  fill="inherit"
+                  d="M16.73,12.05a1.44,1.44,0,0,0,1.54-1.48,4.91,4.91,0,0,0-.1-0.83,5.66,5.66,0,0,0-5.34-4.61c-3,0-5.51,2.76-5.51,6.15s2.47,6.15,5.51,6.15a5.47,5.47,0,0,0,4.26-1.78,1.19,1.19,0,0,0-.19-1.77,1.25,1.25,0,0,0-1.53.16,3.78,3.78,0,0,1-2.54,1.09,3.42,3.42,0,0,1-3.14-3.08h7ZM12.82,7.44a3.3,3.3,0,0,1,3,2.56h-6A3.3,3.3,0,0,1,12.82,7.44Z"
+                ></path>
+                <path
+                  fill="inherit"
+                  d="M7.44,6.32a1.15,1.15,0,0,0-1-1.14A4.46,4.46,0,0,0,2.31,6.69V6.54A1.15,1.15,0,1,0,0,6.54V16a1.18,1.18,0,0,0,1.08,1.2A1.15,1.15,0,0,0,2.31,16V11.15A3.51,3.51,0,0,1,6.15,7.47H6.38A1.15,1.15,0,0,0,7.44,6.32Z"
+                ></path>
+                <path fill="inherit" d="M46.92,7.56a1.15,1.15,0,0,0-2.31,0V16a1.15,1.15,0,1,0,2.31,0V7.56Z"></path>
+                <path
+                  fill="inherit"
+                  d="M29.87,1.15A1.15,1.15,0,0,0,28.72,0h0a1.15,1.15,0,0,0-1.15,1.15V6.31a4,4,0,0,0-2.95-1.18c-3,0-5.51,2.76-5.51,6.15s2.47,6.15,5.51,6.15a4.08,4.08,0,0,0,3-1.19A1.15,1.15,0,0,0,29.87,16V1.15Zm-5.26,14c-1.77,0-3.21-1.72-3.21-3.85s1.43-3.85,3.21-3.85,3.21,1.72,3.21,3.85S26.39,15.13,24.62,15.13Z"
+                ></path>
+                <path
+                  fill="inherit"
+                  d="M41.92,1.15A1.15,1.15,0,0,0,40.77,0h0a1.15,1.15,0,0,0-1.15,1.15V6.31a4,4,0,0,0-2.95-1.18c-3,0-5.51,2.76-5.51,6.15s2.47,6.15,5.51,6.15a4.08,4.08,0,0,0,3-1.19A1.15,1.15,0,0,0,41.92,16V1.15Zm-5.26,14c-1.77,0-3.21-1.72-3.21-3.85s1.43-3.85,3.21-3.85,3.21,1.72,3.21,3.85S38.44,15.13,36.67,15.13Z"
+                ></path>
+                <path
+                  fill="inherit"
+                  d="M52.91,16V7.44h1a1,1,0,0,0,1.06-1,1,1,0,0,0-1-1.09H52.91V3.76a1.18,1.18,0,0,0-1.08-1.19,1.15,1.15,0,0,0-1.23,1.15V5.38h-1a1,1,0,0,0-1.06,1,1,1,0,0,0,1,1.09h1V16a1.15,1.15,0,0,0,1.15,1.15h0A1.15,1.15,0,0,0,52.91,16Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown nav__subtopic">
+              <a
+                class="btn dropdown-toggle navbar-toggle navbar__toggler_link"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                r/CrackWatch
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Hot</a> <a class="dropdown-item" href="#">New</a>
+                <a class="dropdown-item" href="#">Controversial</a> <a class="dropdown-item" href="#">Top</a>
+                <a class="dropdown-item" href="#">Rising</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <article class="header__options">
+        <div class="d-flex mx-4 align-items-center">
+          <span>view</span>
+          <div class="mx-3">
+            <a href="#"><i class="fas fa-equals"></i></a> <a href="#"><i class="fas fa-bars"></i></a> <a href="#"><i class="fas fa-sliders-h"></i></a>
+          </div>
+          <div class="d-flex align-items-center border-left pl-4">
+            <span>sort</span>
+            <div class="dropdown ml-2">
+              <a
+                class="btn dropdown-toggle header__toggler_link"
+                href="#"
+                role="button"
+                id="dropdownHeaderLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-fire mr-1"></i>Hot
+              </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownHeaderLink">
+                <a class="dropdown-item" href="#">Hot</a> <a class="dropdown-item" href="#">New</a>
+                <a class="dropdown-item" href="#">Controversial</a> <a class="dropdown-item" href="#">Top</a>
+                <a class="dropdown-item" href="#">Rising</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+    </header>
+
+    <main class="mx-4">
+      <div class="row">
+          <div class="col-md-9">
+            <article class="banner py-3">
+              <a href="#" class="banner__close">X</a>
+              <h1 class="banner__heading">Personalize your Reddit</h1>
+              <span class="banner__info">Get updates from your favorite communities</span>
+              <div class="banner__action_container"><a href="#" class="banner_action">Get Started</a></div>
+            </article>
+
+            <article>
+              <div class="thread d-flex">
+                <div class="thread__count_container d-flex justify-content-center align-items-center px-1">
+                  <div class="d-flex flex-column text-center">
+                    <a href="#"><i class="fas fa-caret-up" style="font-size: 25px;"></i></a>
+                    <span class="thread__count">29.6k</span>
+                    <a href="#"><i class="fas fa-caret-down text-center" style="font-size: 25px;"></i></a>
+                  </div>
+                </div>
+
+                <div class="thread__image m-1 d-flex justify-content-center align-items-center">
+                  <i class="far fa-image p-4"></i>
+                </div>
+
+                <div class="thread__content m-1">
+                  <div>
+                    <div class="thread__title"><a href="#">What toxic behavior has been normalized by society?</a></div>
+                    <div class="thread__description">
+                      <a class="thread__description_subreddit">r/AskReddit</a>
+                      <div class="thread__description_user">
+                        Posted by 
+                        <a href="#" >u/VirusMaster3073</a>
+                        <span>12 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center thread__actions my-1">
+                      <a href="#"><i class="fas fa-expand"></i></a>
+                      <div class="separator"></div>
+                      <div class=" d-flex align-items-center">
+                        <div class="thread__link_wrapper ml-1">
+                          <a href="#"><i class="fas fa-comment-alt"></i><span class="ml-2">1.8k Comments</span> </a>
+                        </div>
+                        <div class="thread__link_wrapper ml-1">
+                          <a href="#"><i class="fas fa-share"></i><span class="ml-2">Share</span> </a>
+                        </div>
+                        <div class="thread__link_wrapper ml-1">
+                          <a href="#"><i class="fas fa-plus"></i><span class="ml-2">Save</span> </a>
+                        </div>
+                        <div class="thread__link_wrapper ml-1">
+                          <a href="#"><i class="fas fa-eye-slash"></i><span class="ml-2">Hide</span> </a>
+                        </div>
+                        <div class="thread__link_wrapper ml-1">
+                          <a href="#"><i class="fas fa-flag"></i><span class="ml-2">Report</span> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
+          </div>
+
+          <aside class="col-md-3">
+            <article class="mr-2">
+              <article class="subreddit">
+                <div class="subreddit__photo"></div>
+                <div class="subreddit__title px-2 ml-3">
+                  <div class="subreddit__guy"></div>
+                  <a class="subreddit__link">r/popular</a>
+                </div>
+                <p class="subreddit__text px-2">The best posts on Reddit for you, pulled from the most active communities on Reddit. Check here to see the most shared, upvoted, and commented content on the internet.</p>
+                <a href="#" class="subreddit__action">Create Post</a>
+              </article>
+
+              <div class="aside__separator"></div>
+
+              <article class="reddit__premium">
+                <div class="reddit__premium_content_container">
+                  <i class="reddit__premium_icon fas fa-shield-alt"></i>
+                  <div class="reddit__premium_text">
+                    <h3 class="reddit__premium_title">Reddit Premium</h3>
+                    <p class="reddit__premium_subtitle">Ads-free browsing</p>
+                  </div>
+                </div>
+                <a class="reddit__premium_action" href="#">Get Premium</a>
+              </article>
+
+              <div class="aside__separator"></div>
+
+              <article class="trending__communities">
+                <h2 class="trending__communities_title">Trending Communities</h2>
+
+                <section class="community">
+                  <div class="community__content_container">
+                    <i class="community__icon fas fa-globe"></i>
+                    <div class="community__text">
+                      <a href="#" class="community__title">r/Wellworn</a>
+                      <p class="community__subtitle">114.741 subscribers</p>
+                    </div>
+                  </div>
+                  <a class="community__action" href="#">Subscribe</a>
+                </section>
+
+                <section class="community">
+                  <div class="community__content_container">
+                    <i class="community__icon fas fa-globe"></i>
+                    <div class="community__text">
+                      <a href="#" class="community__title">r/keming</a>
+                      <p class="community__subtitle">159.195 subscribers</p>
+                    </div>
+                  </div>
+                  <a class="community__action" href="#">Subscribe</a>
+                </section>
+
+              </article>
+
+            <div class="aside__separator"></div>
+
+            <footer class="footer p-3">
+              <article class="footer__common_links">
+                <a href="#" class="footer__about">About</a>
+                <a href="#" class="footer__carrers">Carrers</a>
+                <a href="#" class="footer__press">Press</a>
+                <a href="#" class="footer__advertise">Advertise</a>
+                <a href="#" class="footer__blog">Blog</a>
+                <a href="#" class="footer__help">Help</a>
+                <a href="#" class="footer__app">Reddit App</a>
+                <a href="#" class="footer__coins">Reddit Coins</a>
+                <a href="#" class="footer__premium">Reddit Premium</a>
+                <a href="#" class="footer__gifts">Reddit Gifts</a>
+              </article>
+              <article class="footer__info_links">
+                <div class="footer__row">
+                  <a href="#" class="footer__content_policy">Content Policy</a>
+                  <a href="#" class="footer__privacy_policy">Privacy Policy</a>
+                </div>
+                <div class="footer__row">
+                  <a href="#" class="footer__user_agreement">User Agreement</a>
+                  <a href="#" class="footer__mod_policy">Mod Policy</a>
+                </div>
+                <div href="#" class="footer__rights">© 2018 Reddit, Inc. All rights reserved</div>
+              </article>
+              </div>
+            </footer>
+            <!-- <footer class="footer">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="col-md-12">
+                    <a href="#" class="footer__link">About</a>
+                  </div>
+                  <div class="col-md-12">
+                    <a href="#" class="footer__link">Carrers</a>
+                  </div>
+                  <div class="col-md-12">
+                    <a href="#" class="footer__link">Press</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <a href="#">Advertise</a>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+              </div>
+            </footer> -->
+          </div>
+        </aside>
+
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intercom Inbox UI</title>
+</head>
+
+<!-- Simplebar -->
+<link href="~/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+
+<!-- Tailwind CSS -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="./styles/style.scss">
+<body>
+  <main class="relative">
+    <div class="h-72 bg-blue-800 shadow px-10 py-6 text-white flex flex-col items-center">
+      <a href="#" class="self-start md:self-center">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path></svg>
+      </a>
+      <div class="flex mt-6 mb-4 self-start md:self-center">
+        <h3 class="text-xl mr-4">Hi Gavin</h3>
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd"></path></svg>
+      </div>
+      <p class="font-extralight text-sm mr-12">We help your business grow by connecting you to your customers.</p>
+    </div>
+    <section class="flex flex-col space-y-4 absolute top-48 w-11/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 inset-x-0 mx-auto">
+      <div class="bg-white border-t-2 border border-gray-200 rounded shadow-xl">
+        <div class="p-4 border-b border-gray-200">
+          <div>
+            <h4 class="font-semibold">Start a conversation</h4>
+          </div>
+          <div class="flex p-4">
+            <div class="flex w-2/5 flex-none -space-x-8">
+              <img class="rounded-full border-2 border-white" src="./assets/images/person-1.png" alt="Person-1" width="56" height="56">
+              <img class="rounded-full border-2 border-white" src="./assets/images/person-2.png" alt="Person-2" width="56" height="56">
+              <img class="rounded-full border-2 border-white" src="./assets/images/person-3.png" alt="Person-3" width="56" height="56">
+            </div>
+            <div>
+              <p class="font-xs text-gray-500">Our usual reply time</p>
+              <div class="flex items-center space-x-1">
+                <div class="flex-none">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <p class="text-sm font-medium">A few minutes</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <button class="bg-blue-800 text-white rounded-full px-4 py-2 shadow flex">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+              <span>Send us a message</span>
+            </button>
+          </div>
+        </div>
+        <div class="p-4">
+          <a href="#" class="text-sm text-blue-700">See all your conversation</a>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col space-y-4 mt-52 w-11/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 inset-x-0 mx-auto">
+      <div class="bg-white border-t-2 border border-gray-200 rounded shadow-xl">
+        <div class="p-4 border-b border-gray-200">
+          <div class="mb-4">
+            <h4 class="font-semibold">Find your answer now</h4>
+          </div>
+          <div class="flex">
+            <input type="text" class="px-2 placeholder-gray-400 border border-gray-400 bg-gray-100 flex-auto" placeholder="Search our articles" />
+            <div class="bg-blue-700 text-white p-2 flex-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col space-y-4 mt-7 w-11/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 inset-x-0 mx-auto">
+      <div class="bg-white border-t-2 border border-gray-200 rounded shadow-xl">
+        <div class="p-4 border-b border-gray-200">
+          <div class="mb-4">
+            <h4 class="font-semibold">Introducing Series</h4>
+          </div>
+          <img src="./assets/images/image-placeholder.jpg" alt="Image" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script src="~/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="./scripts/index.ts"></script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+@charset "UTF-8";
+body {
+  background: #dae0e6 !important;
+  margin: 0;
+}
+
+header .navbar {
+  height: 48px;
+}
+
+header .navbar .navbar__toggler_link {
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+header .navbar .nav__subtopic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__options {
+  background-color: #fff;
+  padding: 8px 10px;
+  height: 40px;
+}
+
+main {
+  margin-top: 32px;
+}
+
+main .banner {
+  background-color: #032e5e;
+  margin-bottom: 8px;
+  background-size: contain;
+  background-image: url("https://www.redditstatic.com/desktop2x/img/banner/banner-personalize@2x.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  padding: 16px;
+  color: #fff;
+}
+
+main .banner .banner__close {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  right: 18px;
+  color: #fff;
+}
+
+main .banner .banner__heading {
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+main .banner .banner__info {
+  font-size: 14px;
+}
+
+main .banner .banner__action_container {
+  margin-top: 10px;
+}
+
+main .banner .banner__action_container .banner_action {
+  padding: 8px 16px;
+  background-color: #0079d3;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  line-height: 24px;
+  color: #fff !important;
+}
+
+main .banner .banner__action_container .banner_action:hover {
+  background-color: rgba(194, 194, 207, 0.6);
+}
+
+.thread {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.thread:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.thread .thread__count_container {
+  background-color: #f8f9fa;
+}
+
+.thread .thread__count_container i {
+  color: #878a8c;
+}
+
+.thread .thread__count_container i:hover {
+  color: rgba(255, 20, 20, 0.8);
+}
+
+.thread .thread__count_container .thread__count {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.thread .thread__image i {
+  background-color: #edeff1;
+  font-size: 30px;
+}
+
+.thread .thread__title {
+  font-weight: 400;
+}
+
+.thread .thread__title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.thread .thread__description {
+  font-size: 12px;
+  color: #999999;
+}
+
+.thread .thread__description .thread__description_subreddit {
+  color: #000;
+  font-weight: 700;
+}
+
+.thread .thread__description .thread__description_subreddit:hover {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.thread .thread__description .thread__description_user {
+  display: inline;
+}
+
+.thread .thread__description .thread__description_user::before {
+  content: '•';
+  font-size: 10px;
+}
+
+.thread .thread__description .thread__description_user a {
+  color: #999999;
+}
+
+.thread .thread__actions a {
+  padding: 2px 4px;
+}
+
+.thread .thread__actions a:hover {
+  background-color: #ddd;
+}
+
+.thread .separator::after {
+  content: '|';
+  margin-left: 4px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.thread .thread__actions a,
+.thread .thread__actions i {
+  color: #999999;
+  font-weight: 700;
+}
+
+.thread .thread__link_wrapper {
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.thread .thread__link_wrapper:hover {
+  background-color: #ddd;
+}
+
+.thread .thread__link_wrapper a:hover {
+  text-decoration: none;
+}
+
+.subreddit {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.subreddit .subreddit__photo {
+  height: 34px;
+  background: url("https://www.redditstatic.com/desktop2x/img/id-cards/banner@2x.png") center center/cover no-repeat #0079d3;
+  border-radius: 4px 4px 0px 0px;
+  margin: -12px -12px 10px;
+}
+
+.subreddit .subreddit__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subreddit .subreddit__title .subreddit__guy {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 68px;
+  position: relative;
+  bottom: 20px;
+  width: 40px;
+  background: url("https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png") 0% 0%/40px 68px;
+}
+
+.subreddit .subreddit__title .subreddit__link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subreddit .subreddit__action {
+  background-color: #0079d3;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #fff !important;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.subreddit .subreddit__action:hover {
+  background-color: rgba(194, 194, 207, 0.6);
+}
+
+.aside__separator {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 14px;
+  margin: 20px 0px;
+}
+
+.reddit__premium {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reddit__premium .reddit__premium_content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reddit__premium .reddit__premium_content_container .reddit__premium_icon {
+  color: #ff4500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 16px;
+  font-size: 25px;
+}
+
+.reddit__premium .reddit__premium_content_container .reddit__premium_text .reddit__premium_title {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.reddit__premium .reddit__premium_content_container .reddit__premium_text .reddit__premium_subtitle {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.reddit__premium .reddit__premium_action {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #ff4500;
+  color: #fff !important;
+  display: block;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 5px 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trending__communities {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.trending__communities .trending__communities_title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.trending__communities .community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trending__communities .community .community__content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0px;
+}
+
+.trending__communities .community .community__content_container .community__icon {
+  color: #0079d3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 28px;
+}
+
+.trending__communities .community .community__content_container .community__text .community__title {
+  font-size: 12px;
+  margin-bottom: 0px;
+  line-height: 8px;
+  color: #000;
+}
+
+.trending__communities .community .community__content_container .community__text .community__subtitle {
+  font-size: 10px;
+  margin-bottom: 0px;
+  line-height: 8px;
+  margin-bottom: 4px;
+}
+
+.trending__communities .community .community__action {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #0079d3;
+  color: #fff !important;
+  display: block;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 6px 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.footer a {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer .footer__common_links {
+  line-height: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: 'about advertise app' 'carrers blog coins' 'press help premium' 'press help gifts';
+}
+
+.footer .footer__common_links .footer__about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about;
+}
+
+.footer .footer__common_links .footer__advertise {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: advertise;
+}
+
+.footer .footer__common_links .footer__app {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: app;
+}
+
+.footer .footer__common_links .footer__carrers {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: carrers;
+}
+
+.footer .footer__common_links .footer__blog {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: blog;
+}
+
+.footer .footer__common_links .footer__coins {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: coins;
+}
+
+.footer .footer__common_links .footer__press {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: press;
+}
+
+.footer .footer__common_links .footer__help {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: help;
+}
+
+.footer .footer__common_links .footer__premium {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: premium;
+}
+
+.footer .footer__common_links .footer__gifts {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: gifts;
+}
+
+.footer .footer__info_links {
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.footer .footer__info_links .footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__info_links .footer__row .footer__content_policy::after {
+  content: '|';
+  margin: 0px 4px;
+}
+
+.footer .footer__info_links .footer__row .footer__user_agreement::after {
+  content: '|';
+  margin: 0px 4px;
+}
+
+.footer .footer__info_links .footer__rights {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

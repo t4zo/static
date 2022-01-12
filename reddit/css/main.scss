@@ -1,0 +1,476 @@
+$white: #fff;
+$black: #000;
+$lightblue: #dae0e6;
+$grey: #ddd;
+$dark-grey: #999999;
+$light-grey: #ededed;
+$arrow: #878a8c;
+$thread-counter-grey: #f8f9fa;
+$game-list: rgb(23, 204, 23);
+$blueaction: rgb(0, 121, 211);
+$orange: #ff4500;
+
+// EXAMPLES
+
+// @function color($color-name) {
+//     @return map-get($colors, $color-name);
+// }
+
+// @mixin desktop {
+//     @media (min-width: #{$desktop}) {
+//         @content;
+//     }
+// }
+
+@mixin card {
+  background-color: $white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+body {
+  background: $lightblue !important;
+  margin: 0;
+}
+
+header {
+  .navbar {
+    height: 48px;
+
+    .navbar__toggler_link {
+      color: $black;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .nav__subtopic {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .header__options {
+    background-color: $white;
+    padding: 8px 10px;
+    height: 40px;
+  }
+}
+
+main {
+  margin-top: 32px;
+
+  .banner {
+    background-color: rgb(3, 46, 94);
+    margin-bottom: 8px;
+    background-size: contain;
+    background-image: url('https://www.redditstatic.com/desktop2x/img/banner/banner-personalize@2x.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    padding: 16px;
+    color: $white;
+
+    .banner__close {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 5px;
+      right: 18px;
+      color: $white;
+    }
+
+    .banner__heading {
+      margin-bottom: 0px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .banner__info {
+      font-size: 14px;
+    }
+
+    .banner__action_container {
+      margin-top: 10px;
+
+      .banner_action {
+        padding: 8px 16px;
+        background-color: $blueaction;
+        border-radius: 5px;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        line-height: 24px;
+        color: $white !important;
+
+        &:hover {
+          background-color: rgba(194, 194, 207, 0.6);
+        }
+      }
+    }
+  }
+}
+
+.thread {
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .thread__count_container {
+    background-color: $thread-counter-grey;
+
+    i {
+      color: $arrow;
+
+      &:hover {
+        color: rgba(255, 20, 20, 0.8);
+      }
+    }
+
+    .thread__count {
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+
+  .thread__image {
+    i {
+      background-color: #edeff1;
+      font-size: 30px;
+    }
+  }
+
+  .thread__title {
+    font-weight: 400;
+
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+
+  .thread__description {
+    font-size: 12px;
+    color: $dark-grey;
+
+    .thread__description_subreddit {
+      color: $black;
+      font-weight: 700;
+
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    .thread__description_user {
+      display: inline;
+
+      &::before {
+        content: '•';
+        font-size: 10px;
+      }
+
+      a {
+        color: $dark-grey;
+      }
+    }
+  }
+
+  .thread__actions a {
+    padding: 2px 4px;
+
+    &:hover {
+      background-color: $grey;
+    }
+  }
+
+  .separator::after {
+    content: '|';
+    margin-left: 4px;
+    font-weight: 400;
+    display: flex;
+    padding-bottom: 4px;
+  }
+
+  .thread__actions a,
+  .thread__actions i {
+    color: $dark-grey;
+    font-weight: 700;
+  }
+
+  .thread__link_wrapper {
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $grey;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.subreddit {
+  @include card;
+
+  .subreddit__photo {
+    height: 34px;
+    background: url('https://www.redditstatic.com/desktop2x/img/id-cards/banner@2x.png') center center / cover no-repeat rgb(0, 121, 211);
+    border-radius: 4px 4px 0px 0px;
+    margin: -12px -12px 10px;
+  }
+
+  .subreddit__title {
+    display: flex;
+
+    .subreddit__guy {
+      flex-shrink: 0;
+      height: 68px;
+      position: relative;
+      bottom: 20px;
+      width: 40px;
+      background: url('https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png') 0% 0% / 40px 68px;
+    }
+
+    .subreddit__link {
+      align-self: center;
+      margin-left: 15px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .subreddit__action {
+    background-color: $blueaction;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: $white !important;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: $white;
+
+    &:hover {
+      background-color: rgba(194, 194, 207, 0.6);
+    }
+  }
+}
+
+.aside__separator {
+  background-color: $white;
+  border-radius: 5px;
+  height: 14px;
+  margin: 20px 0px;
+}
+
+.reddit__premium {
+  @include card;
+
+  display: flex;
+  justify-content: space-between;
+
+  .reddit__premium_content_container {
+    display: flex;
+
+    .reddit__premium_icon {
+      color: $orange;
+      align-self: center;
+      margin-right: 16px;
+      font-size: 25px;
+    }
+
+    .reddit__premium_text {
+      .reddit__premium_title {
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+
+      .reddit__premium_subtitle {
+        font-size: 12px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .reddit__premium_action {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: $orange;
+    color: $white !important;
+    display: block;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 5px 15px;
+    align-self: center;
+  }
+}
+
+.trending__communities {
+  @include card;  
+
+  .trending__communities_title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .community {
+    display: flex;
+    justify-content: space-between;
+
+    .community__content_container {
+      display: flex;
+      margin: 5px 0px;
+
+      .community__icon {
+        color: $blueaction;
+        align-self: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 28px;
+      }
+
+      .community__text {
+        .community__title {
+          font-size: 12px;
+          margin-bottom: 0px;
+          line-height: 8px;
+          color: $black;
+        }
+
+        .community__subtitle {
+          font-size: 10px;
+          margin-bottom: 0px;
+          line-height: 8px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    .community__action {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: $blueaction;
+      color: $white !important;
+      display: block;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 6px 25px;
+      align-self: center;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.footer {
+  @include card;
+
+  a {
+    color: $black;
+    font-size: 12px;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  .footer__common_links {
+    line-height: 16px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'about advertise app'
+      'carrers blog coins'
+      'press help premium'
+      'press help gifts';
+
+    .footer__about {
+      grid-area: about;
+    }
+
+    .footer__advertise {
+      grid-area: advertise;
+    }
+
+    .footer__app {
+      grid-area: app;
+    }
+
+    .footer__carrers {
+      grid-area: carrers;
+    }
+
+    .footer__blog {
+      grid-area: blog;
+    }
+
+    .footer__coins {
+      grid-area: coins;
+    }
+
+    .footer__press {
+      grid-area: press;
+    }
+
+    .footer__help {
+      grid-area: help;
+    }
+
+    .footer__premium {
+      grid-area: premium;
+    }
+
+    .footer__gifts {
+      grid-area: gifts;
+    }
+  }
+
+  .footer__info_links {
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+
+    .footer__row {
+      display: flex;
+      justify-content: center;
+
+      .footer__content_policy {
+        &::after {
+          content: '|';
+          margin: 0px 4px;
+        }
+      }
+
+      .footer__user_agreement {
+        &::after {
+          content: '|';
+          margin: 0px 4px;
+        }
+      }
+    }
+
+    .footer__rights {
+      text-align: center;
+    }
+  }
+}
