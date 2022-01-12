@@ -1,0 +1,42 @@
+.img-title {
+    top: -30px;
+    position: relative;
+    padding: 8px 30px;
+    background-color: #E9E9E9;
+    opacity: 0.75;
+    color: black;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  } 
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-mobile {
+        display: none;
+    }
+
+    .aside-desktop {
+        display: block !important;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #downloads {
+        margin-top: 0px !important;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .list-links a {
+        padding: 10px 20px;
+        border-radius: 2px;
+    }
+
+    .list-links a:hover {
+        color: #E9E9E9;
+        background-color: #191919;
+    }
+ }

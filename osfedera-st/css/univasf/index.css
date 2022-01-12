@@ -1,0 +1,140 @@
+/* Sidebar Desktop */
+.bg-dark {
+    background-color: #191919 !important;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100%;
+}
+
+/* Sidebar - Font Awesome */
+.icons {
+    font-size: 1.5rem;
+    color: #8c8b8b;
+    right: 0px;
+}
+
+i:hover {
+    color: #E9E9E9;
+}
+
+/* Main Page */
+.list-links a {
+    color: #191919;
+    text-decoration: none;
+}
+
+/* Main Body */
+.main-body {
+    font-size: 18px;
+    margin-bottom: 50px !important;
+}
+/*  Banner */
+.banner {
+    max-height: 300px;
+    opacity: 0.85;
+}
+
+.img-title {
+    top: -30px;
+    position: relative;
+    padding: 8px 30px;
+    background-color: #E9E9E9;
+    opacity: 0.75;
+    color: black;
+}
+
+/* Ementa */
+
+/* Downloads */
+
+/* Projetos */
+.projeto-link {
+    background: #3a3939;
+    color: #E9E9E9;
+    display: block;
+    width: 100px;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+/* Conteúdos */
+
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #191919;
+    color: rgba(255,255,255,.8);
+}
+
+.footer-text {
+    margin: 0;
+    padding: 5px 0 8px 0px;
+}
+
+/* HR */
+hr.line-separator {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+hr.line-separator:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  } 
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-mobile {
+        display: none;
+    }
+
+    .aside-desktop {
+        display: block !important;
+    }
+    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .list-links a {
+        padding: 10px 20px;
+        border-radius: 2px;
+    }
+
+    .list-links a:hover {
+        color: #E9E9E9;
+        background-color: #191919;
+    }
+
+    .projeto-link:hover {
+        text-decoration: none;
+        color: #E9E9E9;
+        background: #191919;
+    }
+ }

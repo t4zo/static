@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.ico">    
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./icons/fontawesome/css/fontawesome-all.min.css" />
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/yugioh.css" />
+    
+    <title>Yu-Gi-Oh</title>
+</head>
+
+<body>
+    <div class="row m-0">
+        <!-- Sidebar Desktop -->
+        <aside class="col-md-4 col-lg-3 p-0 d-none aside-desktop">
+            <div class="col-md-4 col-lg-3 p-0 bg-dark h-100 position-fixed d-flex flex-column justify-content-around">
+                
+                <nav class="navbar navbar-dark bg-dark nav-wrapper align-self-end mr-4">
+                    <ul class="navbar-nav nav-ul-wrapper justify-content-around align-items-end text-right">
+                        <a class="navbar-brand mb-5" href="./index.html"><img src="./img/osFedera.png" alt="Os Federa"></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./facape/index.html">FACAPE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./univasf/index.html">UNIVASF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./yugioh.html">Yu-Gi-Oh!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./downloads.html">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./links.html">Links Úteis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="https://youtu.be/qfSyyCBFN-8">Entrevista</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="aside-footer-wrapper mr-5">
+                    <ul class="d-flex list-unstyled mb-0 justify-content-end">
+                        <li class="mx-1"><a target="_blank" href="https://www.google.com.br/"><i class="fab fa-google icons"></i></a></li>
+                        <li class="mx-1"><a target="_blank" href="https://www.facebook.com/groups/165336190320845/about/"><i class="fab fa-facebook icons"></i></a></li>
+                        <li class="mx-1"><a target="_blank" href="https://www.youtube.com.br/"><i class="fab fa-youtube icons"></i></a></li>
+                    </ul>
+                    <div class="text-right mt-3">
+                        <div id="google_translate_element" class="boxTradutor"></div>
+                        <a href="javascript:trocarIdioma('en')"><img class="flag-language" alt="ingles" src="./icons/index/en.png"></a>
+                        <a href="javascript:trocarIdioma('es')"><img class="flag-language" alt="espanhol" src="./icons/index/es.png"></a>
+                        <a href="javascript:trocarIdioma('ar')"><img class="flag-language" alt="arabico" src="./icons/index/ar.png"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+            
+        <!-- Body -->
+        <main class="col-md-8 col-lg-9 p-0 main">
+            <!-- Navbar Mobile -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-mobile">
+                    <a class="navbar-brand mb-1" href="./index.html"><img src="./img/osFedera.png" alt="Os Federa"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./facape/index.html">FACAPE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./univasf/index.html">UNIVASF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./yugioh.html">Yu-Gi-Oh!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./downloads.html">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./links.html">Links Úteis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="https://youtu.be/qfSyyCBFN-8">Entrevista</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Banner -->
+            <header class="banner mb-5">
+                <img class="w-100 banner" src="./img/yugioh4.png" alt="Estágio Supervisionado"></img>
+                <!-- <div class="img-title d-inline">Estagio Supervisionado</div> -->
+            </header>
+
+            <section class="row mx-0 p-3 text-center">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/yugioh1.jpg" alt="Yu-Gi-Oh no Vale">
+                        <div class="card-body">
+                            <h5 class="card-title">Yu-Gi-Oh no Vale</h5>
+                            <p class="card-text">Grupo da galera do Vale que joga Yu-Gi-Oh.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-5 text-center">
+                        <a target="_blank" class="link-download" href="http://www.osfedera.com/arquivos/oficial.jpg" role="button">Clique aqui</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/yugioh3.jpg" alt="Site">
+                        <div class="card-body">
+                            <h5 class="card-title">Site</h5>
+                            <p class="card-text">Site oficial para jogadores de Yu-Gi-Oh.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-5 text-center">
+                        <a target="_blank" class="link-download" href="http://www.osfedera.com/arquivos/oficial.jpg" role="button">Clique aqui</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img id="yugioh-wikia" class="card-img-top" src="./img/yugioh2.jpg" alt="Wikia">
+                        <div class="card-body">
+                            <h5 class="card-title">Wikia</h5>
+                            <p class="card-text">Saiba tudo sobre Yu-Gi-Oh.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-5 text-center">
+                        <a target="_blank" class="link-download" href="http://www.osfedera.com/arquivos/wikia.png" role="button">Clique aqui</a>
+                    </div>
+                </div>
+            </section>
+
+              <footer class="footer col-12">
+                <p class="footer-text">Produzido por Tácio de Souza e Evelyne Bomfim</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- JQuery -->
+    <script src="./js/jquery/jquery-3.3.1.slim.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap/bootstrap.js"></script>
+    
+    <!-- Google Translate -->
+    <script type="text/javascript" src="./js/google-translate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

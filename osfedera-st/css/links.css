@@ -1,0 +1,46 @@
+.link-title {
+    padding: 10px 20px;
+    color: #E9E9E9;
+    background-color: #191919;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.link-li {
+    margin-bottom: 1.2rem;
+}
+
+.link-li a {
+    color: #777;
+    text-decoration: none !important;
+    margin-left: 2rem;
+}
+
+.link-li a:hover {
+    color: black;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  } 
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-mobile {
+        display: none;
+    }
+
+    .aside-desktop {
+        display: block !important;
+    }
+    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }

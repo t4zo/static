@@ -1,0 +1,69 @@
+.link-title {
+    /* Um estilo */
+    /* padding: 10px 20px;
+    background-color: #191919;
+    color: #E9E9E9;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase; */
+
+    /* Outro estilo */
+    /* text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 700; */
+
+    /* Outro estilo */
+    padding: 0 10px 10px 0;
+    border-bottom: 2px solid #191919;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.link-download {
+    padding: 10px 20px; 
+    color: #191919;
+    border: 1px solid #191919;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link-download:hover {
+    color: #E9E9E9;
+    background-color: #191919;
+    text-decoration: none;
+}
+.list-links a {
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  } 
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-mobile {
+        display: none;
+    }
+
+    .aside-desktop {
+        display: block !important;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    
+
+    .list-links a:hover {
+        color: #E9E9E9;
+        background-color: #191919;
+    }
+    
+ }
